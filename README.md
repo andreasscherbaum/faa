@@ -22,6 +22,19 @@ See the AdminGuide for further information.
 
 
 
+Load data:
+
+For testing you can use the table "ots_staging" to load the data
+into the database. Use psql to load the OTP CSV files into the
+staging table:
+
+\copy otp_staging from 'On_Time_On_Time_Performance_2012_12.csv' with delimiter as ',' csv header quote '"' null ''
+
+Then use the provided "etl.sql" to copy the data from the staging
+table into the "otp" table.
+
+
+
 
 License:
 

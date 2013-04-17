@@ -51,6 +51,7 @@ ${PSQL} ${CONNECT} -f L_WORLD_AREA_CODES.sql
 ${PSQL} ${CONNECT} -f L_YESNO_RESP.sql
 
 ${PSQL} ${CONNECT} -f OTP.sql
+${PSQL} ${CONNECT} -f OTP_staging.sql
 
 
 
