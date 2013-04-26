@@ -6,7 +6,7 @@ set -e
 
 PSQL=/usr/bin/psql
 DB=faa
-DB_USER=ads
+DB_USER=postgres
 DB_HOST=
 DB_PORT=
 

@@ -216,5 +216,3 @@ PARTITION BY RANGE (flightdate)
     PARTITION p_month START ('2011-01-01'::DATE) END ('2013-12-31'::DATE)
         EVERY ('1 month'::INTERVAL)
 );
-
-

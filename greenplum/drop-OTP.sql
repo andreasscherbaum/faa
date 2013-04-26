@@ -1,1 +1,2 @@
 DROP TABLE IF EXISTS otp;
+DROP TABLE IF EXISTS otp_staging;

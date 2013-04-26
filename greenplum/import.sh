@@ -6,7 +6,7 @@ set -e
 
 PSQL=/usr/local/greenplum-db/bin/psql
 DB=faa
-DB_USER=ads
+DB_USER=gpadmin
 DB_HOST=
 DB_PORT=
 
@@ -51,6 +51,7 @@ ${PSQL} ${CONNECT} -f L_WORLD_AREA_CODES.sql
 ${PSQL} ${CONNECT} -f L_YESNO_RESP.sql
 
 ${PSQL} ${CONNECT} -f OTP.sql
+${PSQL} ${CONNECT} -f OTP_staging.sql
 
 
 
